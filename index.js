@@ -76,8 +76,47 @@ console.log(graphData[0]);
 // using dot notation
 console.log(graphData[0].name);
 
+console.log(graphData);
+
+// push() method - add element at the end of an array.
+graphData.push(myPost);
+
+console.log(graphData);
+
+// End of dummy data 
+
+// Fetch Request
+
 // fetch(url, options)
 // .then(res => res.json())
 // .then(data =>{
 //     console.log(data);
 // });
+
+// Copy Paste to Fetch Request
+console.log(graphData.length);
+
+// Loops are used to do repetitive tasks
+// Print each individual element in the graphData
+// Syntax: for(initial; condition; increment++/decrement--)
+// 1st iteration: 0 < 2 (true)
+// 2nd iteration: 1 < 2 (true)
+// 3rd iteration: 2 < 2 (false)
+
+for(let i = 0; i < 2; i++){
+    console.log(graphData[i]);
+    console.log(graphData[i].name);
+    console.log(graphData[i].volume);
+}
+
+// map method is used to loop through all elements/items of an array and execute some code
+// it creates a new array
+
+// This will create a topics variable that contains the "object.name"
+let topics = graphData.map(object =>{
+    console.log(object);
+    console.log(object.name);
+    return object.name;
+});
+
+console.log(topics);
