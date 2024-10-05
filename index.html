@@ -17,6 +17,22 @@
         body {
             margin: 0px;
         } */
+
+        footer{
+            background-color: black;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .fa-globe, fa-brands{
+            font-size: 25px;
+            color: white;
+            margin: 0 10px 0 10px;
+        }
+        .fa-globe:hover, .fa-brands:hover{
+            color:gray;
+        }
     </style>
 
     <title>X Trending Topics</title>
@@ -34,9 +50,25 @@
     -->
     <div class="bg-dark px-5 py-5">
         <h1 class="text-light text-center mb-3">Trending Topics of <span id="date">10/05/24</span></h1>
+
+        <!-- HTML Tag to generate chart -->
+        <canvas id="myChart"></canvas>
     </div>
+
+    <footer>
+        <a href="https://mac-lozano.is-a.dev/" target="blank">
+            <i class="fa-solid fa-globe"></i>
+        </a>
+    </footer>
+
+    <!-- CharJS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <!-- Bootstrap Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Fontawesome Script -->
+    <script src="https://kit.fontawesome.com/ac6573953f.js" crossorigin="anonymous"></script>
 
     <!-- External JS -->
      <script src="./index.js"></script>
